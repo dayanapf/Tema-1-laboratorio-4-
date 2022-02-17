@@ -1,0 +1,115 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" media="screen">
+        <script type="text/javascript" src="../scripts/datos.js"></script>
+        <title>Página de Dayana</title>
+     </head>
+    
+    <body>
+        <div id="pagina">
+            <header>BANNER</header>
+            <nav>
+                <a href="http://dragones.uci.cu/">Dragones</a>
+                <a href="http://intranet2.uci.cu/">Intranet</a>
+                <a href="http://internos.uci.cu/">Internos</a>
+                <a href="http://www.cubadebate.cu/">Cubadebate</a>
+                <a href="http://www.juventudrebelde.cu/">JRebelde</a>
+                <a href="http://www.mes.edu.cu/">MES</a>
+            </nav>
+            <main>
+                <h1>Estoy aprendiendo HTML5</h1><br>
+                <a href="../index.html">Inicio</a><br>
+                <div class="claseA">
+                    <p class="clase1" id="primero">This is my lab 1.</p>
+                    <p>¿Quién dijo: "La luz es el gozo supremo de los Hombres..." y "Es la hora de los hornos y de la marcha unida y no ha de verse más que la luz..."?</p>
+                    <p>A continuación les presento algunos de mis datos y mi recorrido estudiantil hasta el momento:</p>
+                </div>
+                <form enctype="multipart/form-data" name="formulario"> 
+                    <div class="claseA" id="idDatosB">
+                        <fieldset><legend>Datos básicos</legend>
+                            <label>*Nombre</label><br>
+                            <input type="text" placeholder="Nombre" name="nombre"><br><br>
+                            <label>*Apellidos</label><br>
+                            <input type="text" name="apellidos"><br><br>
+                            <label>*Género</label><br>
+                            <input type="radio" name="genero"><label>Femenino</label> 
+                            <input type="radio" name="genero"><label>Masculino</label> 
+                        </fieldset>
+                    </div>
+                    <div class="claseB" id="idDatosC">
+                        <fieldset><legend>Datos complementarios</legend>
+                            <div class="claseB" id="idfoto">
+                                <label>Mi foto</label><input type="file" name="foto">
+                            </div>
+                            <div class="claseB">
+                                <label>Idiomas que domino</label><br>
+                                <input type="checkbox" id="ingles"><label for="ingles">Inglés</label><br>
+                                <input type="checkbox">Francés<br>
+                                <input type="checkbox">Portugués<br>
+                                <input type="checkbox" name="otrochb" onchange="habilitarInput()">Otro <input type="text" id="activar" disabled="disabled" name="otroinp">
+                            </div>
+                            <div class="claseB">
+                                <label>Mi asignatura preferida</label>
+                                <select name="asignatura">
+                                    <option>-Seleccione-</option>
+                                    <option>Programación 5</option>
+                                    <option>Ingeniería de software</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="claseC">
+                        <button type="reset">Limpiar formulario</button>
+                        <button type="submit" onclick="salvarDatos()">Enviar formulario</button>
+                   </div>
+                </form>
+                                 
+                <hr>
+                <div class="claseC">
+                    <table border="1">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Género</th>
+                            <th>Asignatura preferida</th>
+                            <th>Modificar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tr>
+                            <td>Sara</td>
+                            <td>Alvarez</td>
+                            <td>Femenino</td>
+                            <td>Matemática</td>
+                            <td><input type="button"></td>
+                            <td><input type="button"></td>
+                        </tr>
+                        <tr>
+                            <td>Roberto</td>
+                            <td>Jiménez</td>
+                            <td>Masculino</td>
+                            <td>Programación 5</td>
+                            <td><input type="button"></td>
+                            <td><input type="button"></td>
+                        </tr>
+                        <tr>
+                            <td>Javier</td>
+                            <td>Rodríguez</td>
+                            <td>Masculino</td>
+                            <td>Ingeniería de Software</td>
+                            <td><input type="button"></td>
+                            <td><input type="button"></td>                            
+                        </tr>
+                    </table>
+                </div>
+            </main>
+            <footer class="cajas" id="footer">FOOTER</footer>
+        </div>
+        </body>   
+</html>
